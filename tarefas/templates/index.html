@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tarefas</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="center">
+                <h1>Tarefas</h1>
+            </div>
+            <div class="row" style="border: 1px solid #000">
+                <h5 class="center">Nova tarefa</h5>
+                <div class="col s4"></div>
+                <form class="col s4">
+                    <div class="row">
+                        <div class="col s12">
+                            <input placeholder="Titulo" id="titulo" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="" disabled selected>Selecione</option>
+                                    <option value="1">Baixa</option>
+                                    <option value="2">Media</option>
+                                    <option value="3">Alta</option>
+                                </select>
+                                <label>Prioridade</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center">
+                        <div class="col s12">
+                            <a class="waves-effect waves-light btn">Criar</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="col s4"></div>
+            </div>
+
+            <div class="center" style="border: 1px solid #000">
+                <div class="row">
+                    <div class="col s12">
+                        <h5>Titulo</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <h6>Prioridade</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('select').formSelect();
+            });
+        </script>
+    </body>
+</html>
